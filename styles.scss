@@ -1,0 +1,166 @@
+section.landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .landing-text {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.75);
+        padding: 100px;
+        color: #333;
+
+        h1.landing-heading {
+            font: 60px 'Playfair Display', sans-serif;
+        }
+    
+        p.landing-par {
+            margin: 15px 0px 25px;
+            font: 24px 'Lora', sans-serif;
+            line-height: 1.5;
+        }
+
+        button.landing-btn {
+            padding: 20px 40px;
+            font: 16px 'Raleway', sans-serif;
+            text-transform: uppercase;
+            background: #fff;
+            border: 1px solid #333;
+            color: #333;
+            letter-spacing: 7px;
+            font-weight: 600;
+            transition: .5s;
+        }
+
+        button.landing-btn:hover {
+            background: #333;
+            color: #fff;
+        }
+    }
+
+    .text-container {
+        display: none;
+    }
+    
+    .top-left-svg-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -5;
+    }
+
+    .bottom-right-svg-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -5;
+        margin-bottom: -5px;
+
+        .sunflower-butterfly {
+            display: none;
+        }
+    }
+
+    .sunflower-butterfly {
+        animation: rotate 25s linear infinite;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    section.landing {
+        overflow: hidden;
+    
+        .landing-text {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 30px;
+            margin: 25px;
+            color: #333;
+    
+            h1.landing-heading {
+                font: 36px 'Playfair Display', sans-serif;
+            }
+        
+            p.landing-par {
+                margin: 15px 0px 25px;
+                font: 18px 'Lora', sans-serif;
+                line-height: 1.5;
+            }
+    
+            button.landing-btn {
+                padding: 20px 30px;
+                font: 14px 'Raleway', sans-serif;
+                text-transform: uppercase;
+                background: #fff;
+                border: 1px solid #333;
+                color: #333;
+                letter-spacing: 7px;
+                font-weight: 600;
+                transition: .5s;
+            }
+    
+            button.landing-btn:hover {
+                background: #333;
+                color: #fff;
+            }
+        }
+    
+        .text-container {
+            display: none;
+        }
+
+        .img-container {
+            position: relative;
+
+            .sunflower-butterfly {
+                width: 20%;
+                position: absolute;
+                
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .top-left-svg-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -5;
+
+            .sunflower-butterfly {
+                top: 25px;
+                left: -10%;
+            }
+        }
+    
+        .bottom-right-svg-container {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -5;
+            margin-bottom: -5px;
+
+            .sunflower-butterfly {
+                display: block;
+                bottom: 25px;
+                right: -10%;
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
