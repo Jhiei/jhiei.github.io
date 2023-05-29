@@ -71,6 +71,8 @@ section.landing {
 
     body {
         overflow: hidden;
+        width: 100vw;
+        height: 100vh;
     }
 
     section.landing {
@@ -118,6 +120,7 @@ section.landing {
 
         .img-container {
             position: relative;
+            width: 100%;
 
             .sunflower-butterfly {
                 width: 20%;

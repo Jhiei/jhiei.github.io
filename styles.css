@@ -60,6 +60,8 @@ section.landing .sunflower-butterfly {
 @media screen and (max-width: 480px) {
   body {
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
   }
   section.landing {
     overflow: hidden;
@@ -100,6 +102,7 @@ section.landing .sunflower-butterfly {
   }
   section.landing .img-container {
     position: relative;
+    width: 100%;
   }
   section.landing .img-container .sunflower-butterfly {
     width: 20%;
