@@ -14,16 +14,18 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <audio id="audioplayer" autoplay src="assets/pursue-roy-antonio.mp3"></audio>
+    <div class="preloader-modal">
+        <button class="preloader-modal-hide-btn">I'm ready!</button>
+    </div>
 
     <section class="landing">
         <div class="landing-text" data-aos="fade-up" data-aos-duration="2000">
-            <h1 class="landing-heading">Lorem ipsum...</h1>
+            <h1 class="landing-heading">Anica, the one I treasure the most,</h1>
             <p class="landing-par">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                Animi necessitatibus doloribus magni deleniti esse tenetur!
+                Remember the 135 cards I might need to write everything I want to say? <br>
+                Well, here it is. This is the voice of my heart. <br>
             </p>
-            <button class="landing-btn">Read More</button>
+            <button class="landing-btn">Start</button>
         </div>
         <div class="text-container">
             <p>Number 1</p>
@@ -85,6 +87,7 @@
 
     <script src="app.js"></script>
     <script src="disable-drag.js"></script>
+    <script src="preloader.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

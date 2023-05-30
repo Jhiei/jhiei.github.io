@@ -1,3 +1,34 @@
+button {
+    padding: 20px 40px;
+    font: 16px 'Raleway', sans-serif;
+    text-transform: uppercase;
+    background: #fff;
+    border: 1px solid #333;
+    color: #333;
+    letter-spacing: 7px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+button:hover {
+    background: #8CD08E;
+    border-color: #8CD08E;
+    color: #fff;
+}
+
+.preloader-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 section.landing {
     width: 100%;
     height: 100vh;
@@ -11,6 +42,7 @@ section.landing {
         background: rgba(255, 255, 255, 0.75);
         padding: 100px;
         color: #333;
+        z-index: 15;    
 
         h1.landing-heading {
             font: 60px 'Playfair Display', sans-serif;
@@ -23,20 +55,11 @@ section.landing {
         }
 
         button.landing-btn {
-            padding: 20px 40px;
-            font: 16px 'Raleway', sans-serif;
-            text-transform: uppercase;
-            background: #fff;
             border: 1px solid #333;
-            color: #333;
-            letter-spacing: 7px;
-            font-weight: 600;
-            transition: .5s;
         }
 
         button.landing-btn:hover {
             background: #333;
-            color: #fff;
         }
     }
 
@@ -101,7 +124,53 @@ section.landing {
 }
 
 @media (max-width: 480px) {
+    button {
+        padding: 20px 30px;
+        font: 14px 'Raleway', sans-serif;
+    }
 
+    section.landing {
+
+        .landing-text {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 25px;
+
+            h1.landing-heading {
+                font: 44px 'Playfair Display', sans-serif;
+            }
+        
+            p.landing-par {
+                margin: 15px 0px 25px;
+                font: 20px 'Lora', sans-serif;
+                line-height: 1.5;
+            }
+        }
+
+        .svg-modal {
+
+            .svg-container {
+
+                .top-left-svg-container {
+
+                    .sunflower-butterfly {
+                        top: 5%;
+                    }
+                }
+            
+                .bottom-right-svg-container {
+
+                    .sunflower-butterfly {
+                        bottom: 10%;
+                    }
+                }
+            }
+        }
+        
+
+        .sunflower-butterfly {
+            animation: rotate 30s linear infinite;
+        }
+    }
 }
 
 @keyframes rotate {
