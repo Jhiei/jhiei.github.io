@@ -38,7 +38,7 @@ section.landing {
   position: relative;
 }
 section.landing .landing-text {
-  text-align: center;
+  margin: 0px 25px;
   background: rgba(255, 255, 255, 0.75);
   padding: 100px;
   color: #333;
@@ -59,7 +59,20 @@ section.landing .landing-text button.landing-btn:hover {
   background: #333;
 }
 section.landing .text-container {
+  margin: 0px 25px;
   display: none;
+  z-index: 15;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 100px;
+  color: #333;
+}
+section.landing .text-container .text-heading {
+  font: 48px "Playfair Display", sans-serif;
+}
+section.landing .text-container .text-par {
+  margin: 15px 0px 25px;
+  font: 20px "Lora", sans-serif;
+  line-height: 1.5;
 }
 section.landing .svg-modal {
   position: absolute;
@@ -117,6 +130,7 @@ section.landing .sunflower-butterfly {
   section.landing .landing-text {
     background: rgba(255, 255, 255, 0.3);
     padding: 25px;
+    text-align: center;
   }
   section.landing .landing-text h1.landing-heading {
     font: 44px "Playfair Display", sans-serif;
@@ -125,6 +139,30 @@ section.landing .sunflower-butterfly {
     margin: 15px 0px 25px;
     font: 20px "Lora", sans-serif;
     line-height: 1.5;
+  }
+  section.landing .text-container {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 25px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    text-align: center;
+  }
+  section.landing .text-container .text-heading {
+    font: 36px "Playfair Display", sans-serif;
+  }
+  section.landing .text-container .text-par {
+    margin: 15px 0px 25px;
+    font: 20px "Lora", sans-serif;
+    line-height: 1.5;
+  }
+  section.landing .text-container .text-span {
+    font-style: italic;
+    font: 44px "Playfair Display", sans-serif;
+  }
+  section.landing .text-container .text-small {
+    display: inline-block;
+    margin: 15px 0px 25px;
+    font: 18px "Lora", sans-serif;
   }
   section.landing .svg-modal .svg-container .top-left-svg-container .sunflower-butterfly {
     top: 5%;

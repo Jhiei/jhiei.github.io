@@ -38,7 +38,7 @@ section.landing {
     position: relative;
 
     .landing-text {
-        text-align: center;
+        margin: 0px 25px;
         background: rgba(255, 255, 255, 0.75);
         padding: 100px;
         color: #333;
@@ -64,7 +64,22 @@ section.landing {
     }
 
     .text-container {
+        margin: 0px 25px;
         display: none;
+        z-index: 15;
+        background: rgba(255, 255, 255, 0.75);
+        padding: 100px;
+        color: #333;
+
+        .text-heading {
+            font: 48px "Playfair Display", sans-serif;
+        }
+
+        .text-par {
+            margin: 15px 0px 25px;
+            font: 20px 'Lora', sans-serif;
+            line-height: 1.5;
+        }
     }
 
     .svg-modal {
@@ -134,6 +149,7 @@ section.landing {
         .landing-text {
             background: rgba(255, 255, 255, 0.3);
             padding: 25px;
+            text-align: center;
 
             h1.landing-heading {
                 font: 44px 'Playfair Display', sans-serif;
@@ -143,6 +159,34 @@ section.landing {
                 margin: 15px 0px 25px;
                 font: 20px 'Lora', sans-serif;
                 line-height: 1.5;
+            }
+        }
+
+        .text-container {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 25px;
+            max-height: fit-content;
+            text-align: center;
+
+            .text-heading {
+                font: 36px 'Playfair Display', sans-serif;
+            }
+
+            .text-par {
+                margin: 15px 0px 25px;
+                font: 20px 'Lora', sans-serif;
+                line-height: 1.5;
+            }
+
+            .text-span {
+                font-style: italic;
+                font: 44px "Playfair Display", sans-serif;
+            }
+
+            .text-small {
+                display: inline-block;
+                margin: 15px 0px 25px;
+                font: 18px "Lora", sans-serif;
             }
         }
 
