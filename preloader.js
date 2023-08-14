@@ -3,7 +3,7 @@ $(() => {
     let btn = $(".preloader-modal-hide-btn");
 
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'assets/as_you_are_zt.mp3');
+    audioElement.setAttribute('src', 'assets/pursue-roy-antonio.mp3');
 
     btn.on("click", function() {
         audioElement.play();
