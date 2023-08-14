@@ -54,13 +54,14 @@ section.landing .landing-text {
   padding: 100px;
   color: #333;
   z-index: 15;
+  margin-bottom: 75px;
 }
 section.landing .landing-text h1.landing-heading {
   font: 60px "Playfair Display", sans-serif;
 }
 section.landing .landing-text p.landing-par {
   margin: 15px 0px 25px;
-  font: 24px "Lora", sans-serif;
+  font: 20px "Lora", sans-serif;
   line-height: 1.5;
 }
 section.landing .landing-text button.landing-btn {
@@ -76,13 +77,14 @@ section.landing .text-container {
   background: rgba(255, 255, 255, 0.75);
   padding: 100px;
   color: #333;
+  margin-bottom: 75px;
 }
 section.landing .text-container .text-heading {
-  font: 48px "Playfair Display", sans-serif;
+  font: 44px "Playfair Display", sans-serif;
 }
 section.landing .text-container .text-par {
   margin: 15px 0px 25px;
-  font: 20px "Lora", sans-serif;
+  font: 16px "Lora", sans-serif;
   line-height: 1.5;
 }
 section.landing .svg-modal {

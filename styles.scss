@@ -55,7 +55,8 @@ section.landing {
         background: rgba(255, 255, 255, 0.75);
         padding: 100px;
         color: #333;
-        z-index: 15;    
+        z-index: 15;
+        margin-bottom: 75px;
 
         h1.landing-heading {
             font: 60px 'Playfair Display', sans-serif;
@@ -63,7 +64,7 @@ section.landing {
     
         p.landing-par {
             margin: 15px 0px 25px;
-            font: 24px 'Lora', sans-serif;
+            font: 20px 'Lora', sans-serif;
             line-height: 1.5;
         }
 
@@ -83,14 +84,15 @@ section.landing {
         background: rgba(255, 255, 255, 0.75);
         padding: 100px;
         color: #333;
+        margin-bottom: 75px;
 
         .text-heading {
-            font: 48px "Playfair Display", sans-serif;
+            font: 44px "Playfair Display", sans-serif;
         }
 
         .text-par {
             margin: 15px 0px 25px;
-            font: 20px 'Lora', sans-serif;
+            font: 16px 'Lora', sans-serif;
             line-height: 1.5;
         }
     }
