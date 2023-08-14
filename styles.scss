@@ -1,0 +1,240 @@
+button {
+    padding: 20px 40px;
+    font: 16px 'Raleway', sans-serif;
+    text-transform: uppercase;
+    background: #fff;
+    border: 1px solid #333;
+    color: #333;
+    letter-spacing: 7px;
+    font-weight: 600;
+    transition: .5s;
+    box-shadow: 5px 5px 5px rgba(45, 45, 45, 0.3);
+}
+
+button:hover {
+    background: #8CD08E;
+    border-color: #8CD08E;
+    color: #fff;
+}
+
+.preloader-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p.preloader-text {
+        color: #333;
+        font: 36px 'Playfair Display', sans-serif;
+        line-height: 1.5;
+        margin-bottom: 100px;
+
+        span.preloader-tag {
+            display: block;
+        }
+    }
+}
+
+section.landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .landing-text {
+        margin: 0px 25px;
+        background: rgba(255, 255, 255, 0.75);
+        padding: 100px;
+        color: #333;
+        z-index: 15;    
+
+        h1.landing-heading {
+            font: 60px 'Playfair Display', sans-serif;
+        }
+    
+        p.landing-par {
+            margin: 15px 0px 25px;
+            font: 24px 'Lora', sans-serif;
+            line-height: 1.5;
+        }
+
+        button.landing-btn {
+            border: 1px solid #333;
+        }
+
+        button.landing-btn:hover {
+            background: #333;
+        }
+    }
+
+    .text-container {
+        margin: 0px 25px;
+        display: none;
+        z-index: 15;
+        background: rgba(255, 255, 255, 0.75);
+        padding: 100px;
+        color: #333;
+
+        .text-heading {
+            font: 48px "Playfair Display", sans-serif;
+        }
+
+        .text-par {
+            margin: 15px 0px 25px;
+            font: 20px 'Lora', sans-serif;
+            line-height: 1.5;
+        }
+    }
+
+    .svg-modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        .svg-container {
+            position: relative;
+            width: inherit;
+            height: 100%;
+
+            .sunflower-butterfly {
+                width: fit-content;
+                position: absolute;
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                    object-fit: contain;
+                }
+            }
+
+            .top-left-svg-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -5;
+
+                .sunflower-butterfly {
+                    top: 25%;
+                    left: -125px;
+                }
+            }
+        
+            .bottom-right-svg-container {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: -5;
+                margin-bottom: -5px;
+
+                .sunflower-butterfly {
+                    bottom: 25%;
+                    right: -125px;
+                }
+            }
+        }
+    }
+    
+
+    .sunflower-butterfly {
+        animation: rotate 25s linear infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 20px 30px;
+        font: 14px 'Raleway', sans-serif;
+    }
+
+    section.landing {
+
+        .landing-text {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 25px;
+            text-align: center;
+
+            h1.landing-heading {
+                font: 44px 'Playfair Display', sans-serif;
+            }
+        
+            p.landing-par {
+                margin: 15px 0px 25px;
+                font: 20px 'Lora', sans-serif;
+                line-height: 1.5;
+            }
+        }
+
+        .text-container {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 25px;
+            max-height: fit-content;
+            text-align: center;
+
+            .text-heading {
+                font: 36px 'Playfair Display', sans-serif;
+            }
+
+            .text-par {
+                margin: 15px 0px 25px;
+                font: 20px 'Lora', sans-serif;
+                line-height: 1.5;
+            }
+
+            .text-span {
+                font-style: italic;
+                font: 44px "Playfair Display", sans-serif;
+            }
+
+            .text-small {
+                display: inline-block;
+                margin: 15px 0px 25px;
+                font: 18px "Lora", sans-serif;
+            }
+        }
+
+        .svg-modal {
+
+            .svg-container {
+
+                .top-left-svg-container {
+
+                    .sunflower-butterfly {
+                        top: 5%;
+                    }
+                }
+            
+                .bottom-right-svg-container {
+
+                    .sunflower-butterfly {
+                        bottom: 10%;
+                    }
+                }
+            }
+        }
+        
+
+        .sunflower-butterfly {
+            animation: rotate 30s linear infinite;
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
