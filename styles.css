@@ -61,7 +61,7 @@ section.landing .landing-text h1.landing-heading {
 }
 section.landing .landing-text p.landing-par {
   margin: 15px 0px 25px;
-  font: 20px "Lora", sans-serif;
+  font: 24px "Lora", sans-serif;
   line-height: 1.5;
 }
 section.landing .landing-text button.landing-btn {
@@ -84,7 +84,7 @@ section.landing .text-container .text-heading {
 }
 section.landing .text-container .text-par {
   margin: 15px 0px 25px;
-  font: 16px "Lora", sans-serif;
+  font: 24px "Lora", sans-serif;
   line-height: 1.5;
 }
 section.landing .svg-modal {
@@ -146,11 +146,11 @@ section.landing .sunflower-butterfly {
     text-align: center;
   }
   section.landing .landing-text h1.landing-heading {
-    font: 44px "Playfair Display", sans-serif;
+    font: 40px "Playfair Display", sans-serif;
   }
   section.landing .landing-text p.landing-par {
     margin: 15px 0px 25px;
-    font: 20px "Lora", sans-serif;
+    font: 18px "Lora", sans-serif;
     line-height: 1.5;
   }
   section.landing .text-container {
@@ -161,11 +161,11 @@ section.landing .sunflower-butterfly {
     text-align: center;
   }
   section.landing .text-container .text-heading {
-    font: 36px "Playfair Display", sans-serif;
+    font: 30px "Playfair Display", sans-serif;
   }
   section.landing .text-container .text-par {
     margin: 15px 0px 25px;
-    font: 20px "Lora", sans-serif;
+    font: 18px "Lora", sans-serif;
     line-height: 1.5;
   }
   section.landing .text-container .text-span {
